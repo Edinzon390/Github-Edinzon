@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitud de Servicios Veterinarios</title>
+</head>
+
+<body style="background-color: orange">
+    <h2>SOLICITUD DE SERVICIO VETERINARIO</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos del Cliente</legend>
+
+            <label>Nombre completo:</label><br/>
+            <input type="text" name="nombre"/><br/><br/>
+
+            <label>Cédula o Pasaporte:</label><br/>
+            <input type="text" name="cedula"/><br/><br/>
+
+            <label>Teléfono:</label><br />
+            <input type="text" name="telefono"/><br/><br/>
+
+            <label>Correo electrónico:</label><br/>
+            <input type="email" name="correo"/><br/><br/>
+        </fieldset>
+        <br />
+
+        <fieldset>
+            <legend>Datos de la Mascota</legend>
+
+            <label>Nombre de la mascota:</label><br/>
+            <input type="text" name="mascota"/><br/><br/>
+
+            <label>Tipo de mascota:</label><br />
+            <input type="text" name="tipo" placeholder="Perro, gato, ave, etc."/><br/><br/>
+
+            <label>Edad de la mascota:</label><br />
+            <input type="number" name="edad_mascota"/><br/><br/>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>Servicio Solicitado</legend>
+
+            <label>Servicio requerido:</label><br/>
+            <input type="text" name="servicio" placeholder="Consulta, vacunas, desparasitación, etc."/><br/><br/>
+
+            <label>Horario preferido:</label><br/>
+            <input type="radio" name="horario" value="mañana"/>Mañana
+            <input type="radio" name="horario" value="tarde"/>Tarde
+            <input type="radio" name="horario" value="noche"/>Noche
+            <br/><br/>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>Confirmación</legend>
+
+            <label>Fecha de la solicitud:</label><br/>
+            <input type="date" name="fecha"/><br/><br/>
+
+            <label>Firma del solicitante:</label><br/>
+            <input type="text" name="firma"/><br/><br/>
+        </fieldset>
+        <br/>
+
+        <input type="submit" value="Enviar Solicitud"/>
+    </form>
+</body>
+
+</html>
